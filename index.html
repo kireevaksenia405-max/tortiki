@@ -1,246 +1,246 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dessert Artisan — Доставка авторских десертов</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dessert Artisan — Доставка авторских десертов</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="container header__wrapper">
-      <a href="#" class="header__brand">
-        <svg class="header__logo-icon" viewBox="0 0 24 24">
-          <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 5c3.27 0 6 2.46 6 5.5 0 2.4-1.2 4.4-3 5.2v2.3c0 .6-.4 1-1 1H10c-.6 0-1-.4-1-1v-2.3c-1.8-.8-3-2.8-3-5.2C6 9.46 8.73 7 12 7zm-4 5.5c0 1.93 1.79 3.5 4 3.5s4-1.57 4-3.5S14.21 9 12 9s-4 1.57-4 3.5z"/>
-        </svg>
-        <span class="header__title">Dessert Artisan</span>
-      </a>
+<div class="container header__wrapper">
+<a href="#" class="header__brand">
+<svg class="header__logo-icon" viewBox="0 0 24 24">
+<path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 5c3.27 0 6 2.46 6 5.5 0 2.4-1.2 4.4-3 5.2v2.3c0 .6-.4 1-1 1H10c-.6 0-1-.4-1-1v-2.3c-1.8-.8-3-2.8-3-5.2C6 9.46 8.73 7 12 7zm-4 5.5c0 1.93 1.79 3.5 4 3.5s4-1.57 4-3.5S14.21 9 12 9s-4 1.57-4 3.5z"/>
+</svg>
+<span class="header__title">Dessert Artisan</span>
+</a>
 
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li><a href="#" class="header__menu-link header__menu-link--active">Главная</a></li>
-          <li><a href="#sweet-builder" class="header__menu-link">Создать Sweet Box</a></li>
-          <li><a href="#catalog" class="header__menu-link">Каталог</a></li>
-          <li><a href="#checkout" class="header__menu-link">Оформить заказ</a></li>
-        </ul>
-      </nav>
+<nav class="header__nav">
+<ul class="header__menu">
+<li><a href="#" class="header__menu-link header__menu-link--active">Главная</a></li>
+<li><a href="#sweet-builder" class="header__menu-link">Создать Sweet Box</a></li>
+<li><a href="#catalog" class="header__menu-link">Каталог</a></li>
+<li><a href="#checkout" class="header__menu-link">Оформить заказ</a></li>
+</ul>
+</nav>
 
-      <div class="header__actions">
-        <button class="header__action-btn" id="favoriteToggleBtn" title="Избранное">
-          <svg class="header__icon" viewBox="0 0 24 24">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-          </svg>
-          <span class="header__badge" id="favoriteBadge">0</span>
-        </button>
+<div class="header__actions">
+<button class="header__action-btn" id="favoriteToggleBtn" title="Избранное">
+<svg class="header__icon" viewBox="0 0 24 24">
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+</svg>
+<span class="header__badge" id="favoriteBadge">0</span>
+</button>
 
-        <button class="header__action-btn" id="cartOpenBtn" title="Корзина">
-          <svg class="header__icon" viewBox="0 0 24 24">
-            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-          </svg>
-          <span class="header__badge" id="cartBadge">0</span>
-        </button>
-      </div>
-    </div>
-  </header>
+<button class="header__action-btn" id="cartOpenBtn" title="Корзина">
+<svg class="header__icon" viewBox="0 0 24 24">
+<path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+</svg>
+<span class="header__badge" id="cartBadge">0</span>
+</button>
+</div>
+</div>
+</header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__wrapper">
-        <div class="hero__content">
-          <h1 class="hero__title">Искусство создания <span>авторских сладостей</span></h1>
-          <p class="hero__subtitle">Нежнейшие глазированные пончики, тающие во рту блины по секретным рецептам и непревзойденные праздничные торты. Порадуйте себя и своих близких кондитерской роскошью с доставкой.</p>
-          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-            <a href="#catalog" class="button button--primary">Перейти в каталог</a>
-            <a href="#sweet-builder" class="button button--secondary">Собрать свой Box</a>
-          </div>
-        </div>
-        <div class="hero__illustration">
-          <div class="hero__circle-bg"></div>
-          <svg class="hero__visual" width="280" height="280" viewBox="0 0 240 240" fill="none">
-            <circle cx="120" cy="120" r="80" fill="#E6CCB2" stroke="#8C5333" stroke-width="6"/>
-            <path d="M120 45 C155 45, 195 70, 195 120 C195 160, 155 195, 120 195 C85 195, 45 160, 45 120 C45 70, 85 45, 120 45 Z" fill="#C94A29" opacity="0.95"/>
-            <rect x="90" y="70" width="12" height="4" rx="2" fill="#D4AF37" transform="rotate(15 90 70)"/>
-            <rect x="140" y="65" width="12" height="4" rx="2" fill="#FFFDF9" transform="rotate(-30 140 65)"/>
-            <rect x="170" y="110" width="12" height="4" rx="2" fill="#5F7D65" transform="rotate(45 170 110)"/>
-            <rect x="70" y="130" width="12" height="4" rx="2" fill="#D4AF37" transform="rotate(-15 70 130)"/>
-            <rect x="100" y="165" width="12" height="4" rx="2" fill="#FFFDF9" transform="rotate(60 100 165)"/>
-            <circle cx="120" cy="120" r="30" fill="#FAF5F0" stroke="#8C5333" stroke-width="4"/>
-          </svg>
-        </div>
-      </div>
-    </section>
+<section class="hero">
+<div class="container hero__wrapper">
+<div class="hero__content">
+<h1 class="hero__title">Искусство создания <span>авторских сладостей</span></h1>
+<p class="hero__subtitle">Нежнейшие глазированные пончики, тающие во рту блины по секретным рецептам и непревзойденные праздничные торты. Порадуйте себя и своих близких кондитерской роскошью с доставкой.</p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<a href="#catalog" class="button button--primary">Перейти в каталог</a>
+<a href="#sweet-builder" class="button button--secondary">Собрать свой Box</a>
+</div>
+</div>
+<div class="hero__illustration">
+<div class="hero__circle-bg"></div>
+<svg class="hero__visual" width="280" height="280" viewBox="0 0 240 240" fill="none">
+<circle cx="120" cy="120" r="80" fill="#E6CCB2" stroke="#8C5333" stroke-width="6"/>
+<path d="M120 45 C155 45, 195 70, 195 120 C195 160, 155 195, 120 195 C85 195, 45 160, 45 120 C45 70, 85 45, 120 45 Z" fill="#C94A29" opacity="0.95"/>
+<rect x="90" y="70" width="12" height="4" rx="2" fill="#D4AF37" transform="rotate(15 90 70)"/>
+<rect x="140" y="65" width="12" height="4" rx="2" fill="#FFFDF9" transform="rotate(-30 140 65)"/>
+<rect x="170" y="110" width="12" height="4" rx="2" fill="#5F7D65" transform="rotate(45 170 110)"/>
+<rect x="70" y="130" width="12" height="4" rx="2" fill="#D4AF37" transform="rotate(-15 70 130)"/>
+<rect x="100" y="165" width="12" height="4" rx="2" fill="#FFFDF9" transform="rotate(60 100 165)"/>
+<circle cx="120" cy="120" r="30" fill="#FAF5F0" stroke="#8C5333" stroke-width="4"/>
+</svg>
+</div>
+/div>
+</section>
 
-    <section class="sweet-builder" id="sweet-builder">
-      <div class="container">
-        <div class="sweet-builder__heading">
-          <h2 class="sweet-builder__title">Создайте свой уникальный Sweet Box</h2>
-          <p class="sweet-builder__subtitle">Соберите персональный набор из нежных пончиков и блинов — цена рассчитается автоматически</p>
-        </div>
+  <section class="sweet-builder" id="sweet-builder">
+<div class="container">
+<div class="sweet-builder__heading">
+<h2 class="sweet-builder__title">Создайте свой уникальный Sweet Box</h2>
+<p class="sweet-builder__subtitle">Соберите персональный набор из нежных пончиков и блинов — цена рассчитается автоматически</p>
+</div>
 
-        <div class="sweet-builder__content">
-          <div class="sweet-builder__section">
-            <h3 class="sweet-builder__section-title">1. Выберите размер набора</h3>
-            <div class="sweet-builder__options" id="sizeOptions">
-              <div class="sweet-builder__card sweet-builder__card--selected" data-type="size" data-value="6" data-price="4500">
-                <div class="sweet-builder__card-title">Box S (6 шт)</div>
-                <div class="sweet-builder__card-desc">4 500 ₸</div>
-              </div>
-              <div class="sweet-builder__card" data-type="size" data-value="12" data-price="8200">
-                <div class="sweet-builder__card-title">Box M (12 шт)</div>
-                <div class="sweet-builder__card-desc">8 200 ₸</div>
-              </div>
-              <div class="sweet-builder__card" data-type="size" data-value="18" data-price="11500">
-                <div class="sweet-builder__card-title">Box L (18 шт)</div>
-                <div class="sweet-builder__card-desc">11 500 ₸</div>
-              </div>
-            </div>
-          </div>
+<div class="sweet-builder__content">
+<div class="sweet-builder__section">
+<h3 class="sweet-builder__section-title">1. Выберите размер набора</h3>
+<div class="sweet-builder__options" id="sizeOptions">
+<div class="sweet-builder__card sweet-builder__card--selected" data-type="size" data-value="6" data-price="4500">
+<div class="sweet-builder__card-title">Box S (6 шт)</div>
+<div class="sweet-builder__card-desc">4 500 ₸</div>
+</div>
+<div class="sweet-builder__card" data-type="size" data-value="12" data-price="8200">
+<div class="sweet-builder__card-title">Box M (12 шт)</div>
+<div class="sweet-builder__card-desc">8 200 ₸</div>
+</div>
+<div class="sweet-builder__card" data-type="size" data-value="18" data-price="11500">
+<div class="sweet-builder__card-title">Box L (18 шт)</div>
+<div class="sweet-builder__card-desc">11 500 ₸</div>
+</div>
+</div>
+</div>
 
-          <div class="sweet-builder__section">
-            <h3 class="sweet-builder__section-title">2. Выберите кондитерскую основу</h3>
-            <div class="sweet-builder__options" id="baseOptions">
-              <div class="sweet-builder__card sweet-builder__card--selected" data-type="base" data-value="Ассорти нежных пончиков" data-price="0">
-                <div class="sweet-builder__card-title">Глазированные Пончики</div>
-                <div class="sweet-builder__card-desc">+0 ₸</div>
-              </div>
-              <div class="sweet-builder__card" data-type="base" data-value="Блины с начинкой" data-price="900">
-                <div class="sweet-builder__card-title">Тонкие блины / Крепы</div>
-                <div class="sweet-builder__card-desc">+900 ₸</div>
-              </div>
-              <div class="sweet-builder__card" data-type="base" data-value="Микс пончиков и блинов" data-price="1200">
-                <div class="sweet-builder__card-title">Микс (Пончики + Блины)</div>
-                <div class="sweet-builder__card-desc">+1 200 ₸</div>
-              </div>
-            </div>
-          </div>
+  <div class="sweet-builder__section">
+<h3 class="sweet-builder__section-title">2. Выберите кондитерскую основу</h3>
+<div class="sweet-builder__options" id="baseOptions">
+<div class="sweet-builder__card sweet-builder__card--selected" data-type="base" data-value="Ассорти нежных пончиков" data-price="0">
+<div class="sweet-builder__card-title">Глазированные Пончики</div>
+<div class="sweet-builder__card-desc">+0 ₸</div>
+</div>
+<div class="sweet-builder__card" data-type="base" data-value="Блины с начинкой" data-price="900">
+<div class="sweet-builder__card-title">Тонкие блины / Крепы</div>
+<div class="sweet-builder__card-desc">+900 ₸</div>
+</div>
+<div class="sweet-builder__card" data-type="base" data-value="Микс пончиков и блинов" data-price="1200">
+<div class="sweet-builder__card-title">Микс (Пончики + Блины)</div>
+<div class="sweet-builder__card-desc">+1 200 ₸</div>
+</div>
+</div>
+</div>
 
-          <div class="sweet-builder__section">
-            <h3 class="sweet-builder__section-title">3. Добавьте изысканный декор</h3>
-            <div class="sweet-builder__options" id="toppingOptions">
-              <div class="sweet-builder__card" data-type="topping" data-value="Золотая пудра" data-price="1200">
-                <div class="sweet-builder__card-title">Сусальное золото</div>
-                <div class="sweet-builder__card-desc">+1 200 ₸</div>
-              </div>
-              <div class="sweet-builder__card" data-type="topping" data-value="Карамельный миндаль" data-price="400">
-                <div class="sweet-builder__card-title">Миндальные лепестки</div>
-                <div class="sweet-builder__card-desc">+400 ₸</div>
-              </div>
-              <div class="sweet-builder__card sweet-builder__card--selected" data-type="topping" data-value="Ягодный соус" data-price="0">
-                <div class="sweet-builder__card-title">Классический джем</div>
-                <div class="sweet-builder__card-desc">+0 ₸</div>
-              </div>
-            </div>
-          </div>
+  <div class="sweet-builder__section">
+<h3 class="sweet-builder__section-title">3. Добавьте изысканный декор</h3>
+<div class="sweet-builder__options" id="toppingOptions">
+<div class="sweet-builder__card" data-type="topping" data-value="Золотая пудра" data-price="1200">
+<div class="sweet-builder__card-title">Сусальное золото</div>
+<div class="sweet-builder__card-desc">+1 200 ₸</div>
+</div>
+<div class="sweet-builder__card" data-type="topping" data-value="Карамельный миндаль" data-price="400">
+<div class="sweet-builder__card-title">Миндальные лепестки</div>
+<div class="sweet-builder__card-desc">+400 ₸</div>
+</div>
+<div class="sweet-builder__card sweet-builder__card--selected" data-type="topping" data-value="Ягодный соус" data-price="0">
+<div class="sweet-builder__card-title">Классический джем</div>
+<div class="sweet-builder__card-desc">+0 ₸</div>
+</div>
+</div>
+</div>
 
-          <div class="sweet-builder__footer">
-            <div class="sweet-builder__price-block">
-              <span class="sweet-builder__price-label">Стоимость Sweet Box:</span>
-              <div class="sweet-builder__total-price" id="builderTotalPrice">4 500 ₸</div>
-            </div>
-            <button class="button button--gold" id="addBuilderToCartBtn">Добавить Sweet Box в корзину</button>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="sweet-builder__footer">
+<div class="sweet-builder__price-block">
+<span class="sweet-builder__price-label">Стоимость Sweet Box:</span>
+<div class="sweet-builder__total-price" id="builderTotalPrice">4 500 ₸</div>
+</div>
+<button class="button button--gold" id="addBuilderToCartBtn">Добавить Sweet Box в корзину</button>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="catalog" id="catalog">
-      <div class="container">
-        <div class="catalog__heading">
-          <h2 class="catalog__title">Наше праздничное меню</h2>
-        </div>
+  <section class="catalog" id="catalog">
+<div class="container">
+<div class="catalog__heading">
+<h2 class="catalog__title">Наше праздничное меню</h2>
+</div>
 
-        <div class="catalog__controls">
-          <div class="catalog__filter-group">
-            <button class="button button--secondary catalog__filter-btn catalog__filter-btn--active" data-filter="all">Все десерты</button>
-            <button class="button button--secondary catalog__filter-btn" data-filter="cake">Премиум-торты</button>
-            <button class="button button--secondary catalog__filter-btn" data-filter="donut">Изысканные пончики</button>
-            <button class="button button--secondary catalog__filter-btn" data-filter="pancake">Французские блины</button>
-          </div>
+   <div class="catalog__controls">
+<div class="catalog__filter-group">
+<button class="button button--secondary catalog__filter-btn catalog__filter-btn--active" data-filter="all">Все десерты</button>
+<button class="button button--secondary catalog__filter-btn" data-filter="cake">Премиум-торты</button>
+<button class="button button--secondary catalog__filter-btn" data-filter="donut">Изысканные пончики</button>
+<button class="button button--secondary catalog__filter-btn" data-filter="pancake">Французские блины</button>
+</div>
 
-          <div class="catalog__search-bar">
-            <input type="text" id="searchInput" class="input-field" placeholder="Поиск сладостей...">
-          </div>
-        </div>
+   <div class="catalog__search-bar">
+<input type="text" id="searchInput" class="input-field" placeholder="Поиск сладостей...">
+</div>
+</div>
 
-        <div class="catalog__grid" id="catalogGrid"></div>
-      </div>
-    </section>
+   <div class="catalog__grid" id="catalogGrid"></div>
+</div>
+</section>
 
-    <section class="checkout" id="checkout">
-      <div class="container">
-        <div class="checkout__heading">
-          <h2 class="checkout__title">Быстрое оформление доставки</h2>
-          <p class="checkout__subtitle">Введите ваши контактные данные ниже — мы бережно упакуем и быстро доставим ваш заказ.</p>
-        </div>
+   <section class="checkout" id="checkout">
+<div class="container">
+<div class="checkout__heading">
+<h2 class="checkout__title">Быстрое оформление доставки</h2>
+<p class="checkout__subtitle">Введите ваши контактные данные ниже — мы бережно упакуем и быстро доставим ваш заказ.</p>
+</div>
 
-        <form class="form" id="checkoutForm" novalidate>
-          <div class="form__group">
-            <label class="form__label" for="clientName">Ваше имя *</label>
-            <input class="input-field" type="text" id="clientName" placeholder="Александра" required>
-            <span class="form__feedback form__feedback--error" id="nameError"></span>
-          </div>
+  <form class="form" id="checkoutForm" novalidate>
+<div class="form__group">
+<label class="form__label" for="clientName">Ваше имя *</label>
+<input class="input-field" type="text" id="clientName" placeholder="Александра" required>
+<span class="form__feedback form__feedback--error" id="nameError"></span>
+</div>
 
-          <div class="form__group">
-            <label class="form__label" for="clientPhone">Номер мобильного телефона *</label>
-            <input class="input-field" type="tel" id="clientPhone" placeholder="+7 (7__) ___-__-__" required>
-            <span class="form__feedback form__feedback--error" id="phoneError"></span>
-          </div>
+  <div class="form__group">
+<label class="form__label" for="clientPhone">Номер мобильного телефона *</label>
+<input class="input-field" type="tel" id="clientPhone" placeholder="+7 (7__) ___-__-__" required>
+<span class="form__feedback form__feedback--error" id="phoneError"></span>
+</div>
 
-          <div class="form__group">
-            <label class="form__label" for="deliveryAddress">Адрес доставки в Казахстане *</label>
-            <input class="input-field" type="text" id="deliveryAddress" placeholder="Город, улица, дом, квартира" required>
-            <span class="form__feedback form__feedback--error" id="addressError"></span>
-          </div>
+  <div class="form__group">
+<label class="form__label" for="deliveryAddress">Адрес доставки в Казахстане *</label>
+<input class="input-field" type="text" id="deliveryAddress" placeholder="Город, улица, дом, квартира" required>
+<span class="form__feedback form__feedback--error" id="addressError"></span>
+</div>
 
-          <div class="form__actions">
-            <button class="button button--primary form__submit" type="submit" id="submitOrderBtn">
-              Оформить доставку на 0 ₸
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
+  <div class="form__actions">
+<button class="button button--primary form__submit" type="submit" id="submitOrderBtn">
+Оформить доставку на 0 ₸
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
 
   <footer class="footer">
-    <div class="container">
-      <span class="footer__logo">Dessert Artisan</span>
-      <ul class="footer__menu">
-        <li><a href="#" class="footer__link">Главная</a></li>
-        <li><a href="#catalog" class="footer__link">Каталог</a></li>
-        <li><a href="#sweet-builder" class="footer__link">Конструктор</a></li>
-      </ul>
-      <p class="footer__copy">&copy; 2026 Dessert Artisan. Авторские сладости ручной работы премиум-класса. Все права защищены.</p>
-    </div>
-  </footer>
+<div class="container">
+<span class="footer__logo">Dessert Artisan</span>
+<ul class="footer__menu">
+<li><a href="#" class="footer__link">Главная</a></li>
+<li><a href="#catalog" class="footer__link">Каталог</a></li>
+<li><a href="#sweet-builder" class="footer__link">Конструктор</a></li>
+</ul>
+<p class="footer__copy">&copy; 2026 Dessert Artisan. Авторские сладости ручной работы премиум-класса. Все права защищены.</p>
+</div>
+</footer>
 
   <dialog class="dialog" id="cartDialog">
-    <div class="dialog__header">
-      <h2 class="dialog__title">Корзина десертов</h2>
-      <button class="dialog__close" id="cartCloseBtn" aria-label="Закрыть">
-        <svg class="dialog__close-icon" viewBox="0 0 24 24">
-          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-        </svg>
-      </button>
-    </div>
+<div class="dialog__header">
+<h2 class="dialog__title">Корзина десертов</h2>
+<button class="dialog__close" id="cartCloseBtn" aria-label="Закрыть">
+ <svg class="dialog__close-icon" viewBox="0 0 24 24">
+<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+</svg>
+</button>
+</div>
 
-    <ul class="cart-list" id="cartList"></ul>
+ <ul class="cart-list" id="cartList"></ul>
 
-    <div class="cart-total">
-      <span>Итого к оплате:</span>
-      <span id="cartTotalSum">0 ₸</span>
-    </div>
+ <div class="cart-total">
+<span>Итого к оплате:</span>
+<span id="cartTotalSum">0 ₸</span>
+</div>
 
-    <button class="button button--primary" style="width: 100%;" id="checkoutBtn">Оформить доставку</button>
-  </dialog>
+  <button class="button button--primary" style="width: 100%;" id="checkoutBtn">Оформить доставку</button>
+</dialog>
 
-  <div class="toast" id="toastNotification">
-    <svg class="toast__icon" viewBox="0 0 24 24">
-      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-    </svg>
-    <span id="toastMessage">Добавлено в корзину!</span>
-  </div>
+ <div class="toast" id="toastNotification">
+<svg class="toast__icon" viewBox="0 0 24 24">
+<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+</svg>
+<span id="toastMessage">Добавлено в корзину!</span>
+</div>
 
   <script src="script.js"></script>
 </body>
